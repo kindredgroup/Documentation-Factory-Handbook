@@ -5,6 +5,7 @@
 > A single source of truth for *how we design, decide, build, document, and extend* the Documentation Factory.
 
 [![Docs CI](https://github.com/kindredgroup/Documentation-Factory-Handbook/actions/workflows/docs.yml/badge.svg)](https://github.com/kindredgroup/Documentation-Factory-Handbook/actions/workflows/docs.yml)
+[![Publish Docs to GitHub Pages](https://github.com/kindredgroup/Documentation-Factory-Handbook/actions/workflows/pages.yml/badge.svg)](https://github.com/kindredgroup/Documentation-Factory-Handbook/actions/workflows/pages.yml)
 ---
 
 ## 1. Repository-Level Structure (Canonical)
