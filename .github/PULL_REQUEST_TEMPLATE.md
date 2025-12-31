@@ -1,5 +1,5 @@
 ## Summary
-<!-- What changed and why? Keep it short and factual. -->
+<!-- What changed and why? Keep it short and factual.   -->
 
 ## Type of Change
 _Select at least one_
