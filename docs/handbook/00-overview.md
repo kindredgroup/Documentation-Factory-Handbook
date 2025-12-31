@@ -1,42 +1,29 @@
-# Slice Methodology
+# Documentation Factory Handbook
 
-A **Slice** is a self-contained, reproducible unit of work.
+This handbook defines **how we work** on the Documentation Factory.
 
-If a task cannot be explained as a slice, it is not ready for execution.
+It explains:
+- how documentation is structured
+- how slices, ADRs, and runbooks are created
+- how work moves from idea → execution → source of truth
 
----
-
-## What a Slice is
-- Executable by another team member
-- Produces concrete artifacts  
-- Has clear validation and rollback steps
-- Lives under `docs/slices/phase-X/`
-
-## What a Slice is NOT
-- A design discussion
-- A checklist without steps
-- A copy of a portal screenshot
+If you are new to the project, start here.
 
 ---
 
-## Required structure
-Every slice must include:
-1. Purpose
-2. Architectural Context
-3. Prerequisites
-4. What You Will Build
-5. Step-by-step Procedure
-6. Validation Checklist
-7. Artifacts Produced
-8. Rollback / Undo
+## What this handbook is
+- A rulebook for collaboration
+- A guardrail against tribal knowledge
+- A reference for reviewers and contributors
 
-Slices that do not follow this structure will be rejected.
+## What this handbook is NOT
+- Not implementation instructions
+- Not architecture diagrams
+- Not a substitute for slices
 
 ---
 
-## Slice lifecycle
-Draft → Ready → Complete
-
-- **Draft**: being written
-- **Ready**: executable, reviewed
-- **Complete**: executed and validated
+## Where to go next
+- **Slices Method** → how implementation guides are written
+- **ADRs Method** → how decisions are recorded
+- **Contributing** → how to work day to day
