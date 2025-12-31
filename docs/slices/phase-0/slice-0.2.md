@@ -64,16 +64,20 @@ This ensures:
 
 **Commands / Actions:**
 ```bash
+# Set variables for your organization and repository
+ORG_NAME="kindredgroup"
+REPO_NAME="Documentation-Factory-Handbook"
+
 # Using GitHub CLI (if available)
-gh repo create kindredgroup/Documentation-Factory-Handbook \
+gh repo create ${ORG_NAME}/${REPO_NAME} \
   --public \
   --description "Single source of truth for how we design, decide, build, document, and extend the Documentation Factory" \
   --enable-issues \
   --enable-wiki=false
 
 # Clone repository locally
-gh repo clone kindredgroup/Documentation-Factory-Handbook
-cd Documentation-Factory-Handbook
+gh repo clone ${ORG_NAME}/${REPO_NAME}
+cd ${REPO_NAME}
 
 # Initialize basic structure
 mkdir -p .github/ISSUE_TEMPLATE .github/workflows
@@ -349,9 +353,11 @@ cat > .github/ISSUE_TEMPLATE/config.yml << 'EOF'
 blank_issues_enabled: false
 contact_links:
   - name: Documentation
-    url: https://kindredgroup.github.io/Documentation-Factory-Handbook/
+    url: https://{ORG_NAME}.github.io/{REPO_NAME}/
     about: Read the handbook and slice documentation
 EOF
+
+# Note: Replace {ORG_NAME} and {REPO_NAME} with actual values after creating the file
 
 # Commit templates
 git add .github/ISSUE_TEMPLATE/
@@ -381,15 +387,19 @@ Navigate to Settings → Collaborators and teams:
 
 ```bash
 # Using GitHub CLI (example)
-gh api repos/kindredgroup/Documentation-Factory-Handbook/teams/platform-engineers \
-  -X PUT \
+# Note: Replace team slugs with your organization's actual team names
+ORG_NAME="kindredgroup"
+REPO_NAME="Documentation-Factory-Handbook"
+
+# Add team to repository with admin permission
+gh api -X PUT /orgs/${ORG_NAME}/teams/platform-engineers/repos/${ORG_NAME}/${REPO_NAME} \
   -f permission=admin
 
-gh api repos/kindredgroup/Documentation-Factory-Handbook/teams/documentation-team \
-  -X PUT \
+# Add team to repository with write permission
+gh api -X PUT /orgs/${ORG_NAME}/teams/documentation-team/repos/${ORG_NAME}/${REPO_NAME} \
   -f permission=push
 
-# Or configure via GitHub UI
+# Or configure via GitHub UI (Settings → Collaborators and teams)
 ```
 
 **Expected Outcome:**
