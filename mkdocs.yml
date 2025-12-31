@@ -1,0 +1,69 @@
+site_name: Documentation Factory Handbook
+repo_name: doc-factory
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - fenced_code
+  - footnotes
+  - def_list
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+
+  - Handbook:
+      - Overview: handbook/00-overview.md
+      - Slices Method: handbook/01-slices.md
+      - ADRs Method: handbook/02-adrs.md
+      - Runbooks Method: handbook/03-runbooks.md
+      - Playbooks Method: handbook/04-playbooks.md
+      - Architecture Docs: handbook/05-architecture.md
+      - Naming & Tags: handbook/06-naming-and-tags.md
+      - Contributing: handbook/07-contributing.md
+
+  - Slices:
+      - Phase 0:
+          - Slice 0.1: slices/phase-0/slice-0.1.md
+          - Slice 0.2: slices/phase-0/slice-0.2.md
+          - Slice 0.3: slices/phase-0/slice-0.3.md
+          - Slice 0.4: slices/phase-0/slice-0.4.md
+      - Phase 1:
+          - Slice 1.1: slices/phase-1/slice-1.1.md
+          - Slice 1.2: slices/phase-1/slice-1.2.md
+          - Slice 1.3: slices/phase-1/slice-1.3.md
+          - Slice 1.4: slices/phase-1/slice-1.4.md
+          - Slice 1.5: slices/phase-1/slice-1.5.md
+          - Slice 1.6: slices/phase-1/slice-1.6.md
+      - Phase 2:
+          - Slice 2.1: slices/phase-2/slice-2.1.md
+          - Slice 2.2: slices/phase-2/slice-2.2.md
+          - Slice 2.3: slices/phase-2/slice-2.3.md
+          - Slice 2.4: slices/phase-2/slice-2.4.md
+          - Slice 2.5: slices/phase-2/slice-2.5.md
+
+  - ADRs:
+      - ADR Index: adr/README.md
+      # Add individual ADRs here as you create them:
+      # - ADR-007: adr/ADR-007.md
+
+  - Runbooks:
+      - Runbook Index: runbooks/README.md
+
+  - Architecture:
+      - System Context: architecture/system-context.md
