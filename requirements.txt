@@ -1,0 +1,19 @@
+# ================================
+# Documentation Factory – Python Dependencies
+# ================================
+
+# --- Documentation ---
+mkdocs>=1.5.0
+mkdocs-material>=9.5.0
+
+# --- Dev / Docs tooling ---
+pre-commit>=3.5.0
+detect-secrets>=1.4.0
+
+# --- Linting & formatting (used by slices & CI) ---
+black>=23.12.0
+pylint>=3.0.0
+
+# --- Testing (used later, safe to include now) ---
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
