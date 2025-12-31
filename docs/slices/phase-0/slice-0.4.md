@@ -4,7 +4,7 @@
 **Status:** Ready  
 **Estimated Time:** 45–60 minutes  
 **Primary Owner:** Platform / Security (Dev Lead executes)
-
+    
 ---
 
 ## 1. Purpose
@@ -346,3 +346,4 @@ detect-secrets scan > .secrets.baseline
 
 ✅ Reply with only: **“have it”** or **“missing”** (and if missing, tell me what you *do* have: the file path or different name).
 ```
+
