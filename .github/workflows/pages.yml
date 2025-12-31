@@ -2,7 +2,7 @@ name: Publish Docs to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
     paths:
       - "docs/**"
       - "mkdocs.yml"
@@ -55,3 +55,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
