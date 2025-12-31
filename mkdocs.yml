@@ -39,6 +39,7 @@ nav:
 
   - Slices:
       - Phase 0:
+          - Slice 0.2: slices/phase-0/slice-0.2.md
           - Slice 0.4: slices/phase-0/slice-0.4.md
       - Phase 1:
           - Slice 1.1: slices/phase-1/slice-1.1.md
